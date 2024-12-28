@@ -8,6 +8,7 @@ import logging
 import random
 import os
 import sys
+sys.path.append('/home/qindafei/goliath')
 from typing import List
 
 import torch as th

@@ -728,7 +728,7 @@ class BodyDataset(Dataset):
             data = self.get(frame, camera)
         except Exception as e:
             logger.warning(
-                f"error when loading frame_id=`{frame}`, camera_id=`{camera}`, skipping"
+                f"Exception: {e} error when loading frame_id=`{frame}`, camera_id=`{camera}`, skipping"
             )
             return None
 

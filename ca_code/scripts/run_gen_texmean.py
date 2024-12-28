@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+sys.path.append('/home/qindafei/goliath')
 import cv2
 import torch as th
 from tqdm import tqdm

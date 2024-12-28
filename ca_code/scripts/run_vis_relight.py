@@ -6,6 +6,7 @@
 import logging
 import os
 import sys
+sys.path.append('/home/qindafei/goliath')
 from typing import List
 
 import torch as th
@@ -36,10 +37,11 @@ def main(config: DictConfig):
     os.makedirs(f"{model_dir}/tmp", exist_ok=True)
 
     # ckpt_path = f"{model_dir}/checkpoints/model.pt"
-    ckpt_path = f"{model_dir}/checkpoints/600000.pt"
-    if not os.path.exists(ckpt_path):
-        ckpt_path = f"{model_dir}/checkpoints/latest.pt"
-        # ckpt_path = f"{model_dir}/checkpoints/600000.pt"
+    # ckpt_path = f"{model_dir}/checkpoints/600000.pt"
+    # if not os.path.exists(ckpt_path):
+    #     ckpt_path = f"{model_dir}/checkpoints/latest.pt"
+    #     # ckpt_path = f"{model_dir}/checkpoints/600000.pt"
+    ckpt_path = config.test.ckpt.ckpt_path
 
     config.data.split = "test"
     config.data.fully_lit_only = True
