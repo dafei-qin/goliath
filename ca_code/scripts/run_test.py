@@ -8,7 +8,9 @@ import logging
 import random
 import os
 import sys
-sys.path.append('/home/qindafei/goliath')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(current_dir)) # The parent of scripts is ca_code
+sys.path.append(project_root)
 from typing import List
 
 import torch as th
