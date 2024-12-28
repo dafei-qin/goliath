@@ -2,7 +2,7 @@ sid: AXE977
 root_dir: ${oc.env:PWD}
 
 data:
-  root_path: ${root_dir}/data/m--20230317--1011--AXE977--pilot--ProjectGoliath--Head
+  root_path: ${root_dir}/data/m--20230306--0707--AXE977--pilot--ProjectGoliath--Head
   shared_assets_path: ${root_dir}/shared/static_assets_head.pt
   split: train
   fully_lit_only: False
