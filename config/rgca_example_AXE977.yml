@@ -1,5 +1,5 @@
 sid: AXE977
-root_dir: /home/qindafei/goliath
+root_dir: ${oc.env:PWD}
 
 data:
   root_path: ${root_dir}/data/m--20230317--1011--AXE977--pilot--ProjectGoliath--Head
