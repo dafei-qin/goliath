@@ -121,6 +121,7 @@ if __name__ == "__main__":
     console_commands: List[str] = sys.argv[2:]
 
     config = OmegaConf.load(config_path)
+
     config_cli = OmegaConf.from_cli(args_list=console_commands)
     if config_cli:
         logger.info("Overriding with the following args values:")
