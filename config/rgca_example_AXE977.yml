@@ -100,11 +100,11 @@ train:
   ckpt_every_n_steps: 10_000
 
 
-test_path: /home/qindafei/goliath/test/AXE977
+test_path: ${oc.env:PWD}/test/AXE977
 
 test:
   ckpt:
-    ckpt_path: /home/qindafei/goliath/data/m--20230317--1011--QZX685--pilot--ProjectGoliath--Head/model/model.pt
+    ckpt_path: ${oc.env:PWD}/runs/rgca.AXE977/checkpoints/latest.pt
     strict: True
     map_location: cuda:0
   vis_path: ${test_path}/viz
